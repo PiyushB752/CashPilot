@@ -91,3 +91,6 @@ npm run dev
 * Clean state management using hooks
 * Responsive and scalable layout
 * Focus on usability and clarity
+
+## Deployment
+link - https://thunderous-babka-f7ca68.netlify.app/

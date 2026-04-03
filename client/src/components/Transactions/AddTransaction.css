@@ -1,0 +1,61 @@
+.add-form {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.add-form h4 {
+  grid-column: span 2;
+  margin-bottom: 5px;
+}
+
+.add-form input, .add-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+}
+
+.add-form input:focus,
+.add-form select:focus {
+  border-color: #2563eb;
+}
+
+.add-form input[type="number"] {
+  appearance: textfield;
+}
+
+.add-form button {
+  grid-column: span 2; 
+  padding: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.add-form button:hover {
+  background: #1e40af;
+}
+
+@media (max-width: 768px) {
+  .add-form {
+    grid-template-columns: 1fr;
+  }
+
+  .add-form h4,
+  .add-form button {
+    grid-column: span 1;
+  }
+}
